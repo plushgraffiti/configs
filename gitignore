@@ -1,0 +1,55 @@
+### IDE files ###
+.buildpath
+.metadata
+.settings
+.project
+.idea
+nbproject
+*.komodoproject
+*.tmproj
+*.tmproject
+
+### Compiled source ###
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+### Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tag.gz
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+
+### Logs & databases ###
+*.log
+*.sql
+*.sqlite
+
+### OS files ###
+*~
+*.swp
+*.bak
+*.lock
+*.DS_Store
+*ehthumbs.db
+*Icon
+*Thumbs.db
+
+### CakePHP ###
+tmp/*
+app/tmp/*
+!empty
+
