@@ -5,7 +5,7 @@ URxvt*letterSpace:	-1
 
 URxvt.depth:		32
 URxvt*transparent:	true
-URxvt*shading:		25
+URxvt*shading:		15
 URxvt*cursorBlink:	false
 
 URxvt*background:        #171717
