@@ -13,6 +13,14 @@ alias aka='cat ~/.bashrc | grep alias'
 alias pp='git up && git push --all origin -u && git push --tags origin'
 alias lock='xscreensaver-command --lock'
 
+# Git branch in prompt.
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# Display git branch in PS1
+export PS1="\u:\W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
 ### Functions ###
 extract () {
   if [ -f $1 ] ; then
