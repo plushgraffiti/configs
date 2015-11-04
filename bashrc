@@ -6,20 +6,12 @@ alias vim="vim -y"
 alias nano="nano -w"
 alias c="cd;clear"
 alias cp="cp -i"
-alias grep='grep --color=auto -Hno'
+alias grep='grep --color=auto -Hn'
 alias ping='ping -c 10'
 alias df='df -h'
 alias aka='cat ~/.bashrc | grep alias'
-alias pp='git pull; git push'
-alias prod_deploy='git checkout live && git pull && git merge master && git push && cap prod deploy && git checkout master'
+alias pp='git up && git push --all origin -u && git push --tags origin'
 alias lock='xscreensaver-command --lock'
-
-# History fix
-shopt -s histappend
-
-# Anti-alised fonts in Java applications
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
-export JAVA_FONTS=/usr/share/fonts/TTF
 
 ### Functions ###
 extract () {
